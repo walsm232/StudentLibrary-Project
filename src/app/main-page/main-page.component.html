@@ -1,0 +1,32 @@
+<body>
+  <div class="maincontainer">
+  <div>
+    <button aria-label="increase font and change colour scheme for accessibility" *ngIf="!clicked"(click)="acessibbility()">Increase font</button>
+    <button aria-label="decrease font and change colour scheme for accessibility" *ngIf="clicked" (click)="acessibbility()">Decrease font</button>
+  </div>
+    <div class="componentContainer" >
+      <div class="studyroom" (click)="goToStudy()">
+        <p id="study" tabindex="0" [ngStyle]="{'background-color': clicked == true ? 'black' : '#FFA700', 'font-size' : clicked ? '35px' : '20px', 'width' : clicked ? '100%' : '60%'}"> Study Room Bookings</p>
+        <img class="img-studyRoom" alt="Book a study room" src="/assets/project/studyRoom.jpg" tabindex="0">
+      </div>
+      <div class="searchForBooks">
+        <p id="search" tabindex="0" [ngStyle]="{'background-color': clicked == true ? 'black' : '#EB4622', 'font-size' : clicked ? '35px' : '20px', 'font-size' : clicked ? '35px' : '20px', 'width' : clicked ? '100%' : '60%'}"> Search For Books </p>
+        <div class="searchboxContainer">
+          <div class="searchBox">
+            <input placeholder="Book title..." aria-label="Enter book title" type="text" id="text"
+              [(ngModel)]="inputBook">
+            <input type="submit" value="Search" id="submit" aria-label="Search for Book" (click)="searchBook()">
+          </div>
+        </div>
+      </div>
+      <div class="attendance" (click)="goToAttendance()" title="Check attendance of the library">
+        <p id="attendance" tabindex="0" [ngStyle]="{'background-color': clicked == true ? 'black' : '#1A3C66', 'font-size' : clicked ? '35px' : '20px', 'font-size' : clicked ? '35px' : '20px', 'width' : clicked ? '100%' : '60%'}" > Attendance of Library </p>
+        <img class="img-attendance" alt="Check the current attendance of the library" src="/assets/project/attendance.jpg" tabindex="0">
+      </div>
+      <div class="citing" (click)="goToCiting()" title="Check guidelines for citing and plagiarism">
+        <p id="citing" tabindex="0"[ngStyle]="{'background-color': clicked == true ? 'black' : '#4F868E', 'font-size' : clicked ? '35px' : '20px', 'font-size' : clicked ? '35px' : '20px', 'width' : clicked ? '100%' : '60%'}"> Citing, Referencing & Plagiarism</p>
+        <img class="img-citing" alt="Check guidelines for citing, referencing and plagiarism" src="/assets/project/citing.jpg" tabindex="0">
+      </div>
+    </div>
+  </div>
+</body>

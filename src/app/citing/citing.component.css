@@ -1,0 +1,56 @@
+.container {
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    margin-bottom: -10%;
+}
+
+.innercontainer {
+    width: 96%;
+    height: 80%;
+    background-color: #E6E6E2;
+    margin-left: 2%;
+    margin-bottom: -100px;
+}
+
+h1 {
+    color: rgb(79, 134, 142);
+    text-align: left;
+}
+
+h2 {
+    color: rgb(79, 134, 142);
+}
+
+h3 {
+    color: #FF885C;
+}
+
+a {
+    color: #FF885C;
+}
+
+.footer {
+    height: 5%;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #efefef;
+    text-align: center;
+}
+.fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa:hover {
+    opacity: 0.7;
+}  

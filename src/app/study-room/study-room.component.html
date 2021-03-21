@@ -1,0 +1,53 @@
+<body>
+    <div class="container">
+        <div class="searchContainer">
+
+            <div id="number" tabindex="0">
+                <label>Enter Student Number:</label> <input type="text" placeholder="Student Number" maxlength="8">
+            </div>
+            <div id="room" tabindex="0">
+                <label>Select Room Type:</label>
+                <select name="opt">
+                    <option aria-label="1 hour">1 Hour</option>
+                    <option aria-label="2 hour">2 Hour</option>
+                    <option aria-label="St Pats Library Group Study Room">St Pats Library Group Study Room</option>
+                </select>
+            </div>
+
+            <div class="calender" (click)="calendar()">
+                <ejs-calendar id=calendar [value]='value' [min]='minDate' [max]='maxDate'></ejs-calendar>
+            </div>
+        </div>
+        <div class="buttonCon" *ngIf="dateSelected">
+            <button aria-label="display timetable for room availabilities" class="saveButton" (click)="roomSearched()"> Show Availability of Rooms </button>
+        </div>
+        <div class="timetable" tabindex="0" *ngIf="roomSearchButtonClicked" id="timetable">
+            <table>
+                <tr>
+                    <th *ngFor="let x of headers"> {{x}} </th>
+                </tr>
+                <tr *ngFor="let x of timetable">
+                    <td>
+                        {{x.time}}
+                    </td>
+                    <td (click)="roomChosen()" [ngStyle]="{'background-color': x.room1}">
+                    </td>
+                    <td (click)="roomChosen()" [ngStyle]="{'background-color': x.room2}">
+                    </td>
+                    <td (click)="roomChosen()" [ngStyle]="{'background-color': x.room3}">
+                    </td>
+                    <td  (click)="roomChosen()" [ngStyle]="{'background-color': x.room4}">
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+        <div class="success" tabindex="0" *ngIf="roomPicked">
+            <h2>Congrats you have succesfully booked a room</h2>
+		<div id="goHomeButton">
+        <button aria-label="go to homepage" (click)="goHome()">Go Home </button>
+		</div>
+
+        </div>
+    </div>
+</body>

@@ -1,0 +1,79 @@
+<body>
+    <button tabindex="0" aria-label="Change colour contrast for accessibility" (click)="acessibbility()">Fix colour contrast</button>
+
+    <div class="container"
+        [ngStyle]="{'background-color': clicked == true ? 'black' : 'white', 'font-size' : clicked ? '25px' : '15px', 'color': clicked ? 'white' : 'black'}">
+        <h1 tabindex="0"><label>Citing & Referencing</label></h1>
+        <p tabindex="0"><label>Citing and referencing correctly is essential when doing assignments.
+                This page provides information on Referencing Guides for Harvard and APA
+                referencing and many other styles.</label></p>
+        <h3 tabindex="0"><label>Weekly Drop-in clinics </label></h3>
+        <p tabindex="0"><label>There will be weekly drop-in clinics in O'Reilly Library and Cregan Library.</label>
+            <a href="https://www.dcu.ie/library/classes_and_tutorials/classes.shtml">Check out the Classes and
+                Workshop
+                Page</a>, Twitter, and Facebook for more details.</p>
+        <div class="innercontainer" [ngStyle]="{'background-color': clicked ? 'black' : '#E6E6E2'}">
+            <h2 tabindex="0"><label>Reference Guide</label></h2>
+            <h3 tabindex="0"><label>Cite them Rite</label></h3>
+            <p tabindex="0">DCU Library subscribes to <a href="https://www-citethemrightonline-com.dcu.idm.oclc.org/">Cite Them Right
+                    Online</a>, an excellent resource which will help you to reference correctly and avoid plagiarism.
+            </p>
+            <p tabindex="0"><label>Cite Them Right Online will show you how to format references and citations for many different
+                    sources (books, e-books, online articles, etc) in a number of styles including Harvard, APA, IEEE,
+                    MHRA,
+                    MLA,
+                    and OSCOLA.</label></p>
+            <p tabindex="0"><label>Approach Cite Them Right with the type of source you wish to cite and reference, then choose a
+                    citation
+                    style
+                    from a drop-down list.</label></p>
+            <p tabindex="0"><label>There is also an accompanying text book and we have several copies in the Library;
+                    check the <a href="https://capitadiscovery.co.uk/dcu/items/930132">library catalogue</a> for
+                    availability</label></p>
+            <h3 tabindex="0"><label>Harvard</label></h3>
+            <p tabindex="0"><label>Harvard is one of many citation styles. Even within the Harvard style there are many
+                    variations.</label></p>
+            <p tabindex="0"><label> <a
+                        href="https://www.dcu.ie/sites/default/files/library/pdfs/harvard_guide_dcu_cite_them_rightnov18.pdf">DCU
+                        Library Guide(pdf)</a>
+                    This guide gives practical examples for both in-text citation and referencing for a variety of
+                    sources.
+                </label></p>
+            <h3 tabindex="0"><label>APA</label></h3>
+            <p tabindex="0"><label>American Psychological Association (APA) referencing style is widely used in the Social Sciences.
+                    It is
+                    the preferred style for many
+                    programmes in the Institute of Eductaion.</label> </p>
+            <p tabindex="0"><label> <a
+                        href="https://www.dcu.ie/sites/default/files/library/pdfs/apacitingreferencingguide2017.pdf">DCU
+                        Library Guide</a> lists the most
+                    popular citation types with practical examples for both in-text citation and referencing.</label>
+            </p>
+            <h2 tabindex="0"><label>Other Style Guides</label></h2>
+            <p tabindex="0"><label>If you are required to use a citation style other than Harvard and APA, check your school's
+                    style-sheet/guidelines. The following is
+                    a list of the main citation styles, with links to books and online resources.</label></p>
+            <p><label> <a href="https://capitadiscovery.co.uk/dcu/items/627945">ACS (American Chemical
+                        Society)</a></label></p>
+            <p><label> <a
+                        href="https://owl.purdue.edu/owl/research_and_citation/chicago_manual_17th_edition/chicago_style_introduction.html">Chicago</a>
+                </label></p>
+            <p><label> <a href="http://donegalhistory.com/morerules.pdf">IHS</a></label></p>
+            <p tabindex="0"><label> <a
+                        href="https://www.dcu.ie/sites/default/files/library/pdfs/subject-pages/IEEEstyle.pdf">IEEE</a>-
+                    DCU
+                    Library guide (pdf)</label></p>
+            <p><label> <a href="http://www.mhra.org.uk/Publications/Books/StyleGuide/download.shtml">MHRA</a></label>
+            </p>
+            <p><label> <a
+                        href="https://owl.purdue.edu/owl/research_and_citation/mla_style/mla_formatting_and_style_guide/mla_formatting_and_style_guide.html">MLA</a>
+                </label></p>
+            <p><label> <a
+                        href="https://www.law.ox.ac.uk/sites/files/oxlaw/oscola_4th_edn_hart_2012.pdf">OSCOLA</a>
+            </label></p>
+            <p><label> <a
+                        href="https://www.monash.edu/rlo/research-writing-assignments/referencing-and-academic-integrity/citing-and-referencing">Vancover</a>
+                </label></p>
+        </div>
+    </div>
+</body>

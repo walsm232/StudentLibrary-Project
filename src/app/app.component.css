@@ -1,0 +1,66 @@
+/* 
+.container {
+    background-color: #6D99F2;
+}
+
+.img-banner {
+    width:100%
+}
+
+.img-logo {
+    width:20%;
+    height:140px;
+}
+
+.top {
+    display:flex;   
+    justify-content: space-between;
+}
+
+.linkToLoop {
+    margin-top:3.5%;
+    margin-right: 5%;
+}
+
+.linkToLoop>button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .studyroom, .attendance, .citing, .searchForBooks {
+      margin-left:2%;
+      border: 1px solid black;
+  }
+
+  .img-studyRoom, .img-attendance, .img-citing {
+      width:100%;
+      height:40vh;
+  }
+.img-search {
+    width:50%
+}
+ p {
+     border: 1px solid black;  
+     margin-top: 0;
+     margin-bottom:0;
+     background-color: #F2D76D;
+ }
+ .bottom {
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+ .bottom > div {
+     flex: 0 40%;
+     margin:3%;
+     margin-left:5%;
+ }
+ */

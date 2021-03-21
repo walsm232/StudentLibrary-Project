@@ -1,0 +1,43 @@
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: x-large;
+    font-style: italic;
+}
+
+
+button {
+    background-color:blue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.searchContainer {
+    display: flex;
+    justify-content: center;
+}
+.searchBookBox {
+    background-color: white;
+    width: 700px;
+}
+
+.buttonContainer {
+    text-align: center;
+}
+
+.notFound {
+    display: flex;
+    justify-content: center;
+}
+
+.goHomeButton {
+    margin-left: 42%;
+}

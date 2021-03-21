@@ -1,0 +1,29 @@
+<div class="searchContainer">
+    <div class="searchBookBox">
+        <div *ngFor="let x of books">
+            <ul *ngIf="inputtedBook == x.title">
+                <h1>This book is available for collection from main collection</h1>
+                <p><label>Title: {{x.title}} </label></p>
+                <p><label>Author: {{x.author}}</label></p>
+                <p><label>Resvervations of this book this month:{{x.reservations}}</label></p>
+                <p><label>Available {{x.available}}</label></p>
+                <p *ngIf="!reserveHit"><label>Would you like to reserve this book and collect it before 8pm
+                        today?</label></p>
+            </ul>
+        </div>
+        <div>
+            <div tabindex="0" class="buttonContainer" *ngIf="bookBoolean">
+                <button aria-label="Reserve" *ngIf="!reserveHit" (click)="showReserve()">Reserve</button>
+                <button aria-label="Route to home page" *ngIf="reserveHit" (click)="goHome()">Go Home </button>
+            </div>
+            <div tabindex="0" *ngIf="reserveHit">
+                <p><label>Your book has been reserved! Please collect it in the next 2 days any time before
+                        8pm.</label></p>
+            </div>
+        </div>
+        <div class="notFound"tabindex="0" *ngIf="bookBoolean == false">
+            <p><label>This book is not available</label></p>
+        </div>
+        <button class="goHomeButton" (click)="goHome()">Go Home </button>
+    </div>
+</div>

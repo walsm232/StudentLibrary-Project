@@ -1,0 +1,63 @@
+<body>
+	<div class="container">
+		<div tabindex="0" id="SeatCheckerHeading">
+			<h1><label> Seat Availability Checker</label> </h1>
+		</div>
+
+		<p tabindex="0"><label> The library is currently <span class="randomnumber"> {{randomNumber}}%</span> full </label></p>
+
+		<br>
+
+		<h2 tabindex="0"> <label>Floor Breakdown </label></h2>
+		<table>
+			<tr>
+				<th tabindex="0"> Floor </th>
+				<th tabindex="0"> Percentage of Students on Floor </th>
+				<th tabindex="0"> Activity Level </th>
+			</tr>
+			<tr>
+				<td tabindex="0"> Ground Floor </td>
+				<td id="test" tabindex="0"> {{groundFloor}}% out of the total {{randomNumber}}% </td>
+				<td *ngIf="groundFloor <= 15" tabindex="0"> Quiet
+				<td *ngIf="groundFloor > 15 && groundFloor <= 25" tabindex="0"> Moderately Quiet
+				<td *ngIf="groundFloor > 25 && groundFloor <= 35" tabindex="0"> Moderately Busy
+				<td *ngIf="groundFloor > 35 && groundFloor <= 50"tabindex="0"> Busy
+				<td *ngIf="groundFloor > 50"tabindex="0"> Very Busy
+			</tr>
+			<tr>
+				<td tabindex="0"> First Floor </td>
+				<td tabindex="0"> {{firstFloor}}% out of the total {{randomNumber}}% </td>
+				<td *ngIf="firstFloor <= 15" tabindex="0"> Quiet
+				<td *ngIf="firstFloor > 15 && firstFloor <= 25" tabindex="0"> Moderately Quiet </td>
+				<td *ngIf="firstFloor > 25 && firstFloor <= 35" tabindex="0"> Moderately Busy
+				<td *ngIf="firstFloor > 35 && firstFloor <= 50" tabindex="0"> Busy
+				<td *ngIf="firstFloor > 50" tabindex="0"> Very Busy
+			</tr>
+			<tr>
+				<td tabindex="0"> Second Floor </td>
+				<td tabindex="0"> {{secondFloor}}% out of the total {{randomNumber}}% </td>
+				<td *ngIf="secondFloor <= 15" tabindex="0"> Quiet
+				<td *ngIf="secondFloor > 15 && secondFloor <= 25" tabindex="0"> Moderately Quiet </td>
+				<td *ngIf="secondFloor > 25 && secondFloor <= 35" tabindex="0"> Moderately Busy
+				<td *ngIf="secondFloor > 35 && secondFloor <= 50" tabindex="0"> Busy
+				<td *ngIf="secondFloor > 50" tabindex="0"> Very Busy
+			</tr>
+		</table>
+
+		<div class="floorplan">
+			<div class="imageWrapper"> <img tabindex="0" id="img-groundFloor" alt="Library Ground Floor"
+					src="/assets/project/ground_floor.PNG" height="250px" width="300px">
+				<p tabindex="0"><label> Ground Floor</label> </p>
+			</div>
+			<div class="imageWrapper"> <img tabindex="0" id="img-firstFloor" alt="Library First Floor"
+					src="/assets/project/first_floor.png" height="250px" width="300px">
+				<p tabindex="0"><label> First Floor </label></p>
+			</div>
+			<div class="imageWrapper"> <img tabindex="0" id="img-secondFloor" alt="Library Second Floor"
+					src="/assets/project/second_floor.png" height="250px" width="300px">
+				<p tabindex="0"><label> Second Floor </label></p>
+			</div>
+		</div>
+	</div>
+
+</body>
